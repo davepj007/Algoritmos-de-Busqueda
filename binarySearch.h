@@ -7,7 +7,13 @@
 
 
 class binarySearch {
+public:
+    binarySearch();
 
+private:
+    int binarySearchAux(int arr[], int left, int right, int value);
+
+    void search();
 };
 
 
