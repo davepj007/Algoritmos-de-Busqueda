@@ -7,7 +7,13 @@
 
 
 class sequentialSearch {
+public:
+    sequentialSearch();
 
+private:
+    int sequentialSearchAux(int a[], int size, int value);
+
+    void search();
 };
 
 

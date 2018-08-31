@@ -7,14 +7,18 @@
 
 using namespace std;
 
-int sequentialSearchAux(int a[], int size, int value) {
+sequentialSearch::sequentialSearch() {
+    search();
+}
+
+int sequentialSearch::sequentialSearchAux(int a[], int size, int value) {
     for(int i = 0; i < size; i++){
         if(value == a[i]) return i;
     }
     return -1;
 }
 
-void sequentialSearch(){
+void sequentialSearch::search(){
     int size;
     cout << "Enter the size of the array: " << endl;
     cin >> size;
@@ -33,7 +37,7 @@ void sequentialSearch(){
     int res = sequentialSearchAux(arr, size, value);
 
     if(res != -1){
-        cout << "The serched value is in the " << res << " position." << endl;
+        cout << "The searched value is in the " << res << " position." << endl;
     }else {
         cout << "The searched value wasn't found" << endl;
     }
